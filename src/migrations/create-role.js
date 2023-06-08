@@ -17,11 +17,13 @@ module.exports = {
       },
       createdAt: {
         allowNull: false,
-        type: Sequelize.DATE,
+        type: "TIMESTAMP",
+        defaultValue: Sequelize.literal("CURRENT_TIMESTAMP"),
       },
       updatedAt: {
         allowNull: false,
-        type: Sequelize.DATE,
+        type: "TIMESTAMP",
+        defaultValue: Sequelize.literal("CURRENT_TIMESTAMP"),
       },
     });
   },
@@ -29,3 +31,5 @@ module.exports = {
     await queryInterface.dropTable("Roles");
   },
 };
+
+// Tạo khung bảng role

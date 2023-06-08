@@ -23,3 +23,5 @@ module.exports = (sequelize, DataTypes) => {
   );
   return Role;
 };
+
+// Tạo dữ liệu bản ghi của bảng role

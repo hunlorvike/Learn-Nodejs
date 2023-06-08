@@ -26,3 +26,5 @@ module.exports = (sequelize, DataTypes) => {
   );
   return User;
 };
+
+// Tạo dữ liệu bản ghi của bảng user
